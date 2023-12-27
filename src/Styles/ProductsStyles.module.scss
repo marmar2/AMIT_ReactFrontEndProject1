@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+$white:#fff;
+$black:#000;
+$pink:#dc3545;
+$yellow:#ffc107;
+$ff-family: 'Poppins', sans-serif;
+
+
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 7rem;  
+}
+.container .allProducts
+{
+    width: 90%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.container .allProducts .product
+{
+    width: 18rem;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.container .allProducts .product img
+{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.container .allProducts .product h6{
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.container .allProducts .product .price{
+    color: $pink !important;
+    margin-top: 1rem;
+}
+
+.container .allProducts .product button{
+    background-color: $pink;
+    width: 9rem;
+    height: 2.3rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: $white;
+    border-color: $pink;
+    border: 1px;
+    transition: 0.8s;
+}
+.container .allProducts .product button:hover{
+    background-color: $white;
+    color: $pink;
+    border: solid 1px $pink;
+}
+
+.container .allProducts .product p{
+    color: $black;
+    margin: 0.5rem;
+}

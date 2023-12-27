@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+$white:#fff;
+$black:#000;
+$pink:#dc3545;
+$yellow:#ffc107;
+$ff-family: 'Poppins', sans-serif;
+
+
+.Login{
+   width: 100%;
+   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $ff-family;
+}
+
+.Login .addInfo{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login .addInfo .textfield1,.textfield2{
+    width: 11rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: $pink solid 1px;
+    padding: 0.5rem;
+    margin: 1rem;
+    text-align: start;
+    font-size: 1rem;
+    font-family: Roboto;
+    background-color: white;
+    
+}
+
+.Login .addInfo .textfield1:focus{
+    border-radius: 10px;
+    border: $pink solid 1px;
+    background-color: $pink;
+    font-size: 1rem;
+}
+
+.Login .validateInfo{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login .validateInfo button{
+    width: 11rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: $pink solid 1px;
+    padding: 0.5rem;
+    margin: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: Roboto;
+}
+
+.Login .validateInfo button:hover{
+    border-radius: 10px;
+    border: $pink solid 1px;
+    background-color: $pink;
+    color: $white;
+    transition: 0.5s;
+}

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+$white:#fff;
+$black:#000;
+$pink:#dc3545;
+$yellow:#ffc107;
+$ff-family: 'Poppins', sans-serif;
+
+nav{
+  position: fixed;
+  width: 100%;
+  color:$black;
+  z-index: 999;
+  // background-color: $white;
+  background:rgba(255,255,255,1);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  
+  font-weight:800;
+  .container{
+    margin-top: 1rem;
+    width: 100%;
+    padding-top: 0.2rem;
+    padding-inline: 2em;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .nav-options ul{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5em;
+      font-size: 1.2rem;
+      list-style-type: none;
+      transition: 1s;
+      .profileName{
+        color: $pink;
+        &:hover{color: white;}
+        transition: 0.8s;
+      }
+    }
+    
+  }
+}  
+
+@media (max-width:800px) {
+  nav .container .nav-options ul{
+    gap:1em;
+  }
+}
+
+@media (max-width:760px) {
+  nav .container .nav-options ul{
+    gap:0.5em;
+  }
+  }
+
+nav .nav-options ul li a{
+    display: block;
+    text-decoration: none;
+    color:$black;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    transition: 0.8s;
+    
+}
+nav .nav-options ul li a:hover{
+  color:$white;
+  background-color: $pink;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+nav .nav-options ul li a .cart {
+  
+  svg{
+    position: relative;
+    font-size: 1.4rem;
+    cursor: pointer;
+    
+  }
+  span{
+    width:1rem;
+    height: 1rem;;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $pink;
+    color: $black;
+    border-radius: 50%;
+    top:1.1rem;
+    right: 2.5rem;
+    &:hover{
+      color: $white;
+      transition: 0.5s;
+    }
+    
+  }
+  &:hover svg{
+    color: $white;
+    transition: 0.5s;
+  }
+  &:hover span{
+    color: $white;
+    transition: 0.5s;
+  }
+}
+
+
+hr{
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  position: relative;
+  top:5rem;
+  color: $black;
+}
+
+nav .container .activeMenu
+{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: $pink;
+    display: flex !important;
+    color: $black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 111;
+}
+
+nav .container ul li .active
+{
+    background-color:$pink;
+    color: $white;
+    border-radius: 5px solid $pink;
+}
+
+nav .container .activeMenu :hover{
+  color : $white;
+  transition: 0.5s;
+}
+
+nav .container svg
+{
+    color: $black;
+    cursor: pointer;
+    font-size: 30px;
+    
+}
+
+
+
+
